@@ -1,0 +1,256 @@
+// cd git/inked
+// sass --watch sass/style.scss:css/style.min.css --style compressed
+// sass --watch sass/style.scss:css/style.css
+
+@import 'variables.scss';
+@import 'reset.scss';
+
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-default;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: $color-header;
+}
+.highlight h1,
+.highlight h2,
+.highlight h3,
+.highlight h4,
+.highlight h5,
+.highlight h6,
+.highlight a,
+.highlight p {
+  margin: 0;;
+  color: $color-contrast !important;
+}
+
+
+// Basic typography
+p,
+.container,
+.container p {
+  font-family: $font-default;
+  font-size: 15px;
+  line-height: 1.6;
+}
+hr {
+  height: 3px;
+  border: none;
+  background: $color-border;
+}
+h1 {
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+}
+h2 {
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+}
+h3 {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+h4 {
+  font-size: 15px !important;
+  line-height: 1.4 !important;
+}
+h5 {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+h6 {
+  font-size: 10px !important;
+  line-height: 1.4 !important;
+}
+a {
+  text-decoration: underline !important;
+}
+
+
+// Buttons
+.button {
+  font-size: 18px !important;
+  line-height: 45px;
+  padding: 10px !important;
+  white-space: nowrap;
+  color: $color-contrast !important;
+  border-radius: 3px !important;
+  background: $color-cta;
+}
+.button:hover {
+  opacity: .8;
+}
+.button,
+.highlight .button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.button a {
+  color: $color-contrast;
+}
+.button-light {
+  background: $color-background;
+}
+.button-facebook {
+  background: #3b5998;
+}
+.button-twitter {
+  background: #55acee;
+}
+.button-instagram {
+  background: #3f729b;
+}
+
+
+// Helper classes
+.box {
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none !important;
+  border: 3px solid $color-border;
+  border-radius: 3px;
+  background: $color-light;
+  a {
+    text-decoration: none;
+  }
+  strong {
+    text-transform: uppercase;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.no-margin {
+  margin: 0;
+}
+.full {
+  width: 100%;
+}
+
+
+// Typography classes
+.cleanlink {
+  text-decoration: none;
+}
+.light-text {
+  opacity: .8;
+}
+.lighter-text {
+  opacity: .5 !important;
+}
+.center-text {
+  text-align: center;
+}
+.big-text {
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+  opacity: .9 !important;
+}
+.bigger-text {
+  font-size: 42px !important;
+  line-height: 1.4 !important;
+}
+.small-text,
+.vcard {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  opacity: .7;
+}
+
+
+// Columnized classes
+.split-table {
+  width: 100% !important;
+  border-radius: 3px;
+}
+.split-table td {
+  width: 50% !important;
+  padding: 10px !important;
+  vertical-align: top;
+}
+.vertical-border td {
+  border: 3px solid $color-border;
+}
+.table-hover:hover {
+  background: $color-content;
+}
+.table-color {
+  border: 3px solid $color-border;
+  border-radius: 3px;
+  background: $color-light;
+}
+
+
+// Layout clases
+.container {
+  width: 95%;
+  max-width: 580px;
+  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+}
+.column {
+  padding: 25px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.top-corner {
+  border-top-left-radius: $size-radius;
+  border-top-right-radius: $size-radius;
+}
+.bottom-corner {
+  border-bottom-right-radius: $size-radius;
+  border-bottom-left-radius: $size-radius;
+}
+.background {
+  background: $color-background;
+}
+.content {
+  background: $color-content;
+}
+.highlight {
+  color: $color-contrast !important;
+  background: $color-primary;
+}
+.highlight a {
+  text-decoration: underline;
+}
+
+
+// Body
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.618;
+  margin: 0;
+  word-break: break-word;
+  color: $color-text;
+  background: $color-background;
+}
+table.body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: $color-background;
+}
+table.row,
+table.columns {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
